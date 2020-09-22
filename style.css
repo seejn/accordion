@@ -3,7 +3,7 @@ body
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #53ed91;
+    background: #dee0e0;
 }
 .content-box
 {
@@ -12,6 +12,7 @@ body
     margin: 0 auto;
     text-align: justify; 
     margin-top: 20px; 
+    border-radius: 20%;
 }
 .content-box .label 
 {
@@ -22,10 +23,11 @@ body
     font-size: 1.2em;
     font-weight: bolder;
     padding: 10px;
+    border-radius: 15px;
 }
 .content-box.color .label
 {
-    background-color: #eb4034;
+    background-color: #5dc9c0;
 }
 .content-box .label::after
 {
@@ -45,6 +47,7 @@ body
     height: 0;
     overflow: hidden;
     transition: 0.5s;
+    border-radius: 10px;
 }
 .content-box.active .content
 {
