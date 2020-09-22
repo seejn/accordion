@@ -7,25 +7,10 @@ const accordion = () =>
         label[i].addEventListener("click", () =>
         {
             accordion[i].classList.toggle('active');
+            accordion[i].classList.toggle('color');
         });
         
-    }
-    
-
-   /* label[1].addEventListener("click", () =>
-    {
-        accordion[1].classList.toggle('active');
-    });
-    
-    label[2].addEventListener("click", () =>
-    {
-        accordion[2].classList.toggle('active');
-    });
-
-    label[3].addEventListener("click", () =>
-    {
-        accordion[3].classList.toggle('active');
-    });*/
+    };
 };
 const app = () =>
 {
