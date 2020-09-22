@@ -1,6 +1,5 @@
 .content-box
 {
-    position: relative;
     height: auto;
     width: 80%;
     margin: 0 auto;
@@ -9,7 +8,6 @@
 }
 .content-box .label
 {
-    position: relative;
     background-color: #2694af;
     cursor: pointer;
     user-select: none;
@@ -20,7 +18,6 @@
 }
 .content-box .label::after
 {
-    position: relative;
     content: '+';
     float: right;
     transform: translate(-30%);
@@ -33,7 +30,6 @@
 }
 .content-box .content
 {
-    position: relative;
     background-color: pink;
     height: 0;
     overflow: hidden;
@@ -43,4 +39,11 @@
 {
     height: 140px;
     padding: 10px;
+}
+@media screen and (max-width: 1052px)
+{
+    .content-box.active .content
+    {
+        height: auto;
+    }
 }
