@@ -1,0 +1,46 @@
+.content-box
+{
+    position: relative;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify; 
+    margin-top: 20px; 
+}
+.content-box .label
+{
+    position: relative;
+    background-color: #2694af;
+    cursor: pointer;
+    user-select: none;
+    color: linen;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 10px;
+}
+.content-box .label::after
+{
+    position: relative;
+    content: '+';
+    float: right;
+    transform: translate(-30%);
+}
+.content-box.active .label::after
+{
+    content: '-';
+    transform: translate(-60%);
+
+}
+.content-box .content
+{
+    position: relative;
+    background-color: pink;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.content-box.active .content
+{
+    height: 140px;
+    padding: 10px;
+}
